@@ -1,13 +1,14 @@
 using namespace std;
 #include <iostream>
 #include <string>
+#include <vector>
 
 unsigned int ALLOWED_GUESSES = 5;
 unsigned int left_guesses;
 
 //Create  a group of words
 enum fields {WORD, HINT, NUM_OF_FIELDS};
-const string WORDS[][NUM_OF_FIELDS] = {
+const vector<string> WORDS[][NUM_OF_FIELDS] = {
     {"wall", "Do you feel you're banging your head against something?"},
     {"glasses", "These might help you see the answer."},
     {"labored", "Going slowly, is it?"},
